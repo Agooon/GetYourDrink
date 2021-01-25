@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">GetYourDrink</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="info_logo">Logo</string>
+    <string name="title_text_bottom">Taste</string>
+    <string name="title_text_top">Discover Your</string>
+
+
+</resources>
