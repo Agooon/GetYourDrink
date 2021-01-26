@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="clickListener"
+            type="com.example.getyourdrink.ingredients.IngredientListener" />
+
+        <variable
+            name="ingredient"
+            type="com.example.getyourdrink.api.Ingredient" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="@{() -> clickListener.onClick(ingredient)}">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/layout_bg_navyblue">
+
+            <ImageView
+                android:id="@+id/ingredient_image"
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="60dp"
+                app:ingredientImage="@{ingredient}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.501"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                tools:srcCompat="@drawable/ingredient_icon" />
+
+            <TextView
+                android:id="@+id/ingredient_name"
+                android:layout_width="130dp"
+                android:layout_height="20dp"
+                android:textAlignment="center"
+                android:textColor="@color/main_gold"
+                app:ingredientName="@{ingredient}"
+                app:layout_constraintEnd_toEndOf="@+id/ingredient_image"
+                app:layout_constraintStart_toStartOf="@+id/ingredient_image"
+                app:layout_constraintTop_toBottomOf="@+id/ingredient_image"
+                tools:text="Excellent!" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

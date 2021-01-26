@@ -1,14 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".shaker.ShakerFragment">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        tools:context=".shaker.ShakerFragment">
 
-</FrameLayout>
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="200dp"
+            android:alpha="2"
+            android:background="@color/main_light_blue"
+            android:fillAfter="true"
+            android:fillEnabled="true"
+            android:rotation="91"
+            android:rotationY="0"
+            android:text="Lime           Lemon Test\n      Whiskey tes\n Sweat &amp; Sour                                    "
+            android:textColor="@color/main_violet"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/shaker_closure"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:fillAfter="true"
+            android:fillEnabled="true"
+            android:id="@+id/shaker_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/shaker_final_open"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:fillAfter="true"
+            android:fillEnabled="true"
+            android:id="@+id/shaker_closure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="308dp"
+            android:src="@drawable/shaker_final_closure"
+            app:layout_constraintBottom_toBottomOf="@+id/shaker_open"
+            app:layout_constraintEnd_toEndOf="@+id/shaker_open"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/shaker_open" />
+
+        <ImageView
+            android:fillAfter="true"
+            android:fillEnabled="true"
+            android:id="@+id/shaker_together"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/shaker_final"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.501" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

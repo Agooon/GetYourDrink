@@ -9,12 +9,24 @@
         android:id="@+id/startFragment"
         android:name="com.example.getyourdrink.start.StartFragment"
         android:label="fragment_start"
-        tools:layout="@layout/fragment_start" >
+        tools:layout="@layout/fragment_start">
         <action
             android:id="@+id/action_startFragment_to_ingredientsFragment"
             app:destination="@id/ingredientsFragment"
-            app:enterAnim="@anim/slide_down"
-            app:exitAnim="@anim/slide_down" />
+            app:enterAnim="@anim/slide_up2"
+            app:exitAnim="@anim/stationary"
+            app:popEnterAnim="@anim/stationary"
+            app:popExitAnim="@anim/slide_down2"
+            app:popUpTo="@id/ingredientsFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_startFragment_to_drinksFragment"
+            app:destination="@id/drinksFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_up"
+            app:popUpTo="@id/drinksFragment"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/ingredientsFragment"
@@ -25,7 +37,9 @@
             android:id="@+id/action_ingredientsFragment_to_shakerFragment"
             app:destination="@id/shakerFragment"
             app:enterAnim="@anim/slide_up"
-            app:exitAnim="@anim/slide_up"
+            app:exitAnim="@anim/slide_down2"
+            app:launchSingleTop="false"
+            app:popEnterAnim="@anim/slide_up"
             app:popUpTo="@id/ingredientsFragment"
             app:popUpToInclusive="true" />
     </fragment>
@@ -33,5 +47,50 @@
         android:id="@+id/shakerFragment"
         android:name="com.example.getyourdrink.shaker.ShakerFragment"
         android:label="fragment_shaker"
-        tools:layout="@layout/fragment_shaker" />
+        tools:layout="@layout/fragment_shaker">
+        <argument
+            android:name="ingredientsNames"
+            app:argType="string[]" />
+        <action
+            android:id="@+id/action_shakerFragment_to_drinksFragment"
+            app:destination="@id/drinksFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_up"
+            app:popUpTo="@id/ingredientsFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/drinksFragment"
+        android:name="com.example.getyourdrink.drinks.DrinksFragment"
+        android:label="fragment_drinks"
+        tools:layout="@layout/fragment_drinks">
+        <argument
+            android:name="ingredientsName"
+            app:argType="string[]" />
+        <action
+            android:id="@+id/action_drinksFragment_to_drinkDescFragment"
+            app:destination="@id/drinkDescFragment" />
+        <action
+            android:id="@+id/action_drinksFragment_to_startFragment"
+            app:destination="@id/startFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_drinksFragment_to_shakerFragment"
+            app:destination="@id/shakerFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/drinkDescFragment"
+        android:name="com.example.getyourdrink.drinkdesc.DrinkDescFragment"
+        android:label="fragment_drink_desc"
+        tools:layout="@layout/fragment_drink_desc">
+        <argument
+            android:name="id"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_drinkDescFragment_to_startFragment"
+            app:destination="@id/startFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
 </navigation>

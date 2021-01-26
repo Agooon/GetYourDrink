@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="title_size">48sp</dimen>
+    <dimen name="icon_size">80dp</dimen>
+    <dimen name="name_of_drink_size">28sp</dimen>
+    <dimen name="desc_drink_text_size">20sp</dimen>
 </resources>

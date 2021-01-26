@@ -1,0 +1,61 @@
+[
+  {
+    "Id": 1,
+    "Name": "Cuba Libre",
+    "Ingredients": [
+      {
+        "Id": 4,
+        "Name": "Lime",
+        "Amount": 0.5
+      },
+      {
+        "Id": 3,
+        "Name": "Coke",
+        "Amount": 150
+      },
+      {
+        "Id": 8,
+        "Name": "White rum",
+        "Amount": 50
+      }
+    ],
+    "Description": "Short description about the drink"
+  },
+  {
+    "Id": 2,
+    "Name": "Margarita",
+    "Ingredients": [
+      {
+        "Id": 7,
+        "Name": "Tequila",
+        "Amount": 20
+      },
+      {
+        "Id": 1,
+        "Name": "Brandy",
+        "Amount": 10
+      },
+      {
+        "Id": 2,
+        "Name": "Cointreau",
+        "Amount": 10
+      },
+      {
+        "Id": 6,
+        "Name": "Sweet & Sour MIX",
+        "Amount": 20
+      },
+      {
+        "Id": 5,
+        "Name": "Lime slice",
+        "Amount": 1
+      },
+      {
+        "Id": 9,
+        "Name": "Sea salt",
+        "Amount": 1
+      }
+    ],
+    "Description": "Short description about the drink"
+  }
+]

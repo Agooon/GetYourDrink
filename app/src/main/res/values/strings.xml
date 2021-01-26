@@ -5,6 +5,11 @@
     <string name="info_logo">Logo</string>
     <string name="title_text_bottom">Taste</string>
     <string name="title_text_top">Discover Your</string>
+    <string name="ingredient_header_text">Ingredients</string>
+    <string name="find_your_drink">Find Your Drink!</string>
+    <string name="drinks">Drinks</string>
+    <string name="shake_again">Shake Again!</string>
+    <string name="main_menu">Main menu</string>
 
 
 </resources>

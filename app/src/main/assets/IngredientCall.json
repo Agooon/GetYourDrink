@@ -1,0 +1,74 @@
+[
+  {
+    "Id": 1,
+    "Name": "Brandy",
+    "Type": "Alcohol Liquid",
+    "Volume": 40,
+    "AvgSize": -1,
+    "Description": "Short description about the ingredient"
+  },
+  {
+    "Id": 2,
+    "Name": "Cointreau",
+    "Type": "Alcohol Liquid",
+    "Volume": 40,
+    "AvgSize": -1,
+    "Description": "Short description about the ingredient"
+  },
+  {
+    "Id": 3,
+    "Name": "Coke",
+    "Type": "Liquid",
+    "Volume": 0,
+    "AvgSize": -1,
+    "Description": "Short description about the ingredient"
+  },
+  {
+    "Id": 4,
+    "Name": "Lime",
+    "Type": "Citrus",
+    "Volume": 0,
+    "AvgSize": 70,
+    "Description": "Short description about the ingredient"
+  },
+  {
+    "Id": 5,
+    "Name": "Lime slice",
+    "Type": "Decoration",
+    "Volume": 0,
+    "AvgSize": 10,
+    "Description": "Short description about the ingredient"
+  },
+  {
+    "Id": 6,
+    "Name": "Sweet & Sour MIX",
+    "Type": "Alcohol Liquid",
+    "Volume": 0,
+    "AvgSize": -1,
+    "Description": "Short description about the ingredient"
+  },
+  {
+    "Id": 7,
+    "Name": "Tequila",
+    "Type": "Alcohol Liquid",
+    "Volume": 40,
+    "AvgSize": -1,
+    "Description": "Short description about the ingredient"
+  },
+  {
+    "Id": 8,
+    "Name": "White rum",
+    "Type": "Alcohol Liquid",
+    "Volume": 40,
+    "AvgSize": -1,
+    "Description": "Short description about the ingredient"
+  },
+  {
+    "Id": 9,
+    "Name": "Sea salt",
+    "Type": "Decoration",
+    "Volume": 0,
+    "AvgSize": -1,
+    "Description": "Short description about the ingredient"
+  }
+]
