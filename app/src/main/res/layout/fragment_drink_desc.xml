@@ -19,93 +19,69 @@
 
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@{drinkDescViewModel.drink.name}"
-            android:textAlignment="center"
-            android:textSize="@dimen/name_of_drink_size"
-            app:layout_constraintBottom_toTopOf="@+id/imageView"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.168"
-            tools:text="Testowo"
+            android:layout_width="259dp"
+            android:layout_height="605dp"
+            android:background="@color/main_navy_blue"
+            android:text="@{drinkDescViewModel.descriptionSpan}"
+            android:textAlignment="textStart"
+            android:textColor="@color/main_violet"
+            android:textSize="@dimen/description_text_size"
+            android:padding="@dimen/padding_small"
+
             android:textStyle="bold"
-            android:textColor="@color/main_violet" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/ingredients"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="Testowo" />
 
         <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="187dp"
-            android:layout_height="243dp"
-            android:src="@drawable/drink_glass_icon"
+            android:id="@+id/drinkIcon"
+            android:layout_width="154dp"
+            android:layout_height="186dp"
+            android:backgroundTint="@color/main_violet"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/textView2"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.288" />
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/drink_glass_icon" />
 
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="146dp"
-            android:layout_height="108dp"
-            android:src="@drawable/ingredient_icon"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView"
-            app:layout_constraintEnd_toStartOf="@+id/imageView"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="@+id/textView2"
-            app:layout_constraintTop_toTopOf="@+id/imageView"
-            app:layout_constraintVertical_bias="1.0" />
+        <TextView
+            android:id="@+id/drinkTitle"
+            android:layout_width="259dp"
+            android:layout_height="78dp"
+            android:gravity="center"
+            android:text="@{drinkDescViewModel.drink.name}"
+            android:textColor="@color/main_gold"
+            android:textStyle="bold"
+            android:background="@color/main_violet"
+            android:textSize="@dimen/name_of_drink_size"
+            app:layout_constraintEnd_toStartOf="@+id/drinkIcon"
+            app:layout_constraintHorizontal_bias="0.684"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Tytuł" />
 
-        <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="104dp"
-            android:layout_height="209dp"
-            android:src="@drawable/shaker_final_open"
-            app:layout_constraintBottom_toBottomOf="@+id/textView2"
-            app:layout_constraintEnd_toStartOf="@+id/imageView"
+        <TextView
+            android:id="@+id/ingredients"
+            android:layout_width="153dp"
+            android:layout_height="499dp"
+            android:layout_marginTop="184dp"
+            android:text="@{drinkDescViewModel.ingredientString}"
+            android:textAlignment="center"
+            android:textColor="@color/main_gold"
+            android:background="@color/main_violet"
+            android:padding="@dimen/padding_small"
+            android:textSize="@dimen/description_text_size"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Składniki" />
 
-        <ImageView
-            android:id="@+id/imageView5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="76dp"
-            android:src="@drawable/shaker_final_closure"
-            app:layout_constraintBottom_toTopOf="@+id/imageView4"
-            app:layout_constraintEnd_toEndOf="@+id/imageView3"
-            app:layout_constraintHorizontal_bias="0.629"
-            app:layout_constraintStart_toStartOf="@+id/imageView3" />
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:text="@{drinkDescViewModel.drink.description}"
-            android:textSize="@dimen/desc_drink_text_size"
-            app:layout_constraintBottom_toTopOf="@+id/imageView5"
-            app:layout_constraintEnd_toStartOf="@+id/imageView"
-            app:layout_constraintHorizontal_bias="0.024"
-            app:layout_constraintStart_toStartOf="@+id/textView2"
-            app:layout_constraintTop_toBottomOf="@+id/textView2"
-            app:layout_constraintVertical_bias="0.071"
-            tools:text="Example text"
-            android:textColor="@color/main_gold" />
-
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:textColor="@color/main_gold"
-            android:text="@{drinkDescViewModel.getIngredientToString()}"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/imageView"
-            app:layout_constraintStart_toEndOf="@+id/imageView4"
-            app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

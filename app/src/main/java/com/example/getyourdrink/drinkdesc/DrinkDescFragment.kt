@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.getyourdrink.R
 import com.example.getyourdrink.databinding.FragmentDrinkDescBinding
+import com.squareup.picasso.Picasso
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -43,6 +44,8 @@ class DrinkDescFragment : Fragment() {
             ViewModelProvider(this, viewModelFactory).get(DrinkDescViewModel::class.java)
 
         binding.drinkDescViewModel = drinkDescViewModel
+        //drinkIcon
+        Picasso.get().load(drinkDescViewModel.urlImage).fit().into(binding.drinkIcon)
 
         return binding.root
     }

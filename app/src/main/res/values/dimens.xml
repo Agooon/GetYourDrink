@@ -4,4 +4,6 @@
     <dimen name="icon_size">80dp</dimen>
     <dimen name="name_of_drink_size">28sp</dimen>
     <dimen name="desc_drink_text_size">20sp</dimen>
+    <dimen name="description_text_size">18dp</dimen>
+    <dimen name="padding_small">5dp</dimen>
 </resources>

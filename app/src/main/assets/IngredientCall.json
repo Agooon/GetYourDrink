@@ -70,5 +70,29 @@
     "Volume": 0,
     "AvgSize": -1,
     "Description": "Short description about the ingredient"
+  },
+  {
+    "Id": 10,
+    "Name": "Sugar",
+    "Type": "Sweet ingredient",
+    "Volume": 0,
+    "AvgSize": 12,
+    "Description": "Short description about the ingredient"
+  },
+  {
+    "Id": 11,
+    "Name": "Ice",
+    "Type": "Decoration",
+    "Volume": 0,
+    "AvgSize": -1,
+    "Description": "Short description about the ingredient"
+  },
+  {
+    "Id": 12,
+    "Name": "Sparkling Water",
+    "Type": "Water",
+    "Volume": 0,
+    "AvgSize": -1,
+    "Description": "Short description about the ingredient"
   }
 ]

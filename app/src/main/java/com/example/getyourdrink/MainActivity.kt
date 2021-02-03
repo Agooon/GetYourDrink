@@ -9,5 +9,7 @@ class MainActivity : AppCompatActivity() {
         actionBar?.hide()
 //        mainFun(this)
         setContentView(R.layout.activity_main)
+
+
     }
 }

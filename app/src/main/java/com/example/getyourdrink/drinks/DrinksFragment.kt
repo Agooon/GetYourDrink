@@ -73,6 +73,12 @@ class DrinksFragment : Fragment() {
 
         binding.drinksList.layoutManager = manager
 
+        if (drinkViewModel.drinks.isEmpty()) {
+            binding.textInfo.visibility = View.VISIBLE
+        } else {
+            binding.textInfo.visibility = View.INVISIBLE
+        }
+
         return binding.root
     }
 }

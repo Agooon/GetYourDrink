@@ -19,7 +19,8 @@
         "Amount": 50
       }
     ],
-    "Description": "Short description about the drink"
+    "Description": "One of the best drinks ever made!",
+    "ImagePath": "https://www.jamieoliver.com/drinks-tube/app/uploads/2014/06/Margarita.jpg"
   },
   {
     "Id": 2,
@@ -56,6 +57,40 @@
         "Amount": 1
       }
     ],
-    "Description": "Short description about the drink"
+    "Description": "Short description about the drink",
+    "ImagePath": "https://www.liquor.com/thmb/h9kStMQYj4Ve70nijZ4x6vt3EXk=/720x720/filters:fill(auto,1)/__opt__aboutcom__coeus__resources__content_migration__liquor__2018__01__02105149__Cuba-Libre-720x720-recipe-673b48bbef034d89b6b5149b8417c7d5.jpg"
+  },
+  {
+    "Id": 3,
+    "Name": "Mojito",
+    "Ingredients": [
+      {
+        "Id": 8,
+        "Name": "White rum",
+        "Amount": 50
+      },
+      {
+        "Id": 4,
+        "Name": "Lime",
+        "Amount": 1
+      },
+      {
+        "Id": 10,
+        "Name": "Sugar",
+        "Amount": 2
+      },
+      {
+        "Id": 11,
+        "Name": "Ice",
+        "Amount": 4
+      },
+      {
+        "Id": 12,
+        "Name": "Sparkling Water",
+        "Amount": 125
+      }
+    ],
+    "Description": "One of the best drinks ever made!<br> Some Longer text to keep user entertained :D",
+    "ImagePath": "https://polki.pl/foto/4_3_LARGE/beskidzkie-mojito-prosty-przepis-na-drink-2346973.jpg"
   }
 ]
